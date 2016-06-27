@@ -20,7 +20,7 @@
         <activity android:name=".activity.library.SpinnerWidgetActivity"/>
         <activity android:name=".activity.library.InfoCenterActivity"/>
         <activity android:name=".activity.library.ExpanableListViewActivity"/>
-
+        <activity android:name=".activity.library.WheelViewDemoActivity"/>
 
     </application>
 

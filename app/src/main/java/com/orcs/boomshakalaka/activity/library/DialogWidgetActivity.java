@@ -33,13 +33,6 @@ import java.util.List;
  */
 public class DialogWidgetActivity extends BaseActivity implements View.OnClickListener {
 
-    private AppCompatButton simpleDialog;
-    private AppCompatButton simpleListDialog;
-    private AppCompatButton singleChoiceDialog;
-    private AppCompatButton multiChoiceDialog;
-    private AppCompatButton customeAdapterDialog;
-    private AppCompatButton customViewDialog;
-    private AppCompatButton danliDialogABT;
     private AppCompatTextView danliDialogSetATV;
     //AlertDialog构造器
     private AlertDialog.Builder builder;
@@ -54,13 +47,13 @@ public class DialogWidgetActivity extends BaseActivity implements View.OnClickLi
         setContentView(R.layout.activity_dialog_widget);
 
         //实例化控件
-        simpleDialog = (AppCompatButton) findViewById(R.id.btn_simple_dialog);
-        simpleListDialog = (AppCompatButton) findViewById(R.id.btn_simple_list_dialog);
-        singleChoiceDialog = (AppCompatButton) findViewById(R.id.btn_single_choice_dialog);
-        multiChoiceDialog = (AppCompatButton) findViewById(R.id.btn_multi_choice_dialog);
-        customeAdapterDialog = (AppCompatButton) findViewById(R.id.btn_custom_adapter_dialog);
-        customViewDialog = (AppCompatButton) findViewById(R.id.btn_custom_view_dialog);
-        danliDialogABT = (AppCompatButton) findViewById(R.id.btn_danli_dialog);
+        AppCompatButton simpleDialog = (AppCompatButton) findViewById(R.id.btn_simple_dialog);
+        AppCompatButton simpleListDialog = (AppCompatButton) findViewById(R.id.btn_simple_list_dialog);
+        AppCompatButton singleChoiceDialog = (AppCompatButton) findViewById(R.id.btn_single_choice_dialog);
+        AppCompatButton multiChoiceDialog = (AppCompatButton) findViewById(R.id.btn_multi_choice_dialog);
+        AppCompatButton customeAdapterDialog = (AppCompatButton) findViewById(R.id.btn_custom_adapter_dialog);
+        AppCompatButton customViewDialog = (AppCompatButton) findViewById(R.id.btn_custom_view_dialog);
+        AppCompatButton danliDialogABT = (AppCompatButton) findViewById(R.id.btn_danli_dialog);
         danliDialogSetATV = (AppCompatTextView) findViewById(R.id.atv_show_danli_choice);
         //监听点击事件
         simpleDialog.setOnClickListener(this);
@@ -157,9 +150,9 @@ public class DialogWidgetActivity extends BaseActivity implements View.OnClickLi
      * 单选列表对话框
      */
     private void showSingleChoiceDialog() {
-        if (Build.VERSION.SDK_INT< Build.VERSION_CODES.KITKAT_WATCH){
-            builder = new AlertDialog.Builder(this,R.style.MyDialog);
-        }else {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT_WATCH) {
+            builder = new AlertDialog.Builder(this, R.style.MyDialog);
+        } else {
             builder = new AlertDialog.Builder(this);
         }
         builder.setIcon(R.mipmap.ic_launcher);
@@ -195,9 +188,9 @@ public class DialogWidgetActivity extends BaseActivity implements View.OnClickLi
      * 多选列表对话框
      */
     private void showMultiChoiceDialog() {
-        if (Build.VERSION.SDK_INT< Build.VERSION_CODES.KITKAT_WATCH){
-            builder = new AlertDialog.Builder(this,R.style.MyDialog);
-        }else {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT_WATCH) {
+            builder = new AlertDialog.Builder(this, R.style.MyDialog);
+        } else {
             builder = new AlertDialog.Builder(this);
         }
         builder.setIcon(R.mipmap.ic_launcher);
@@ -249,9 +242,9 @@ public class DialogWidgetActivity extends BaseActivity implements View.OnClickLi
 
         final String[] items = {"Items-one", "Items-two", "Items-three", "Items-four", "Items-five", "Items-six", "Items-seven"};
         boolean[] checkeds = new boolean[items.length];
-        if (Build.VERSION.SDK_INT< Build.VERSION_CODES.KITKAT_WATCH){
-            builder = new AlertDialog.Builder(this,R.style.MyDialog);
-        }else {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT_WATCH) {
+            builder = new AlertDialog.Builder(this, R.style.MyDialog);
+        } else {
             builder = new AlertDialog.Builder(this);
         }
         MultiChoiceID.clear();

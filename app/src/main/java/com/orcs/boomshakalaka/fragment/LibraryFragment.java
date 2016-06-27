@@ -9,6 +9,7 @@ import com.orcs.boomshakalaka.activity.library.DialogWidgetActivity;
 import com.orcs.boomshakalaka.activity.library.ExpanableListViewActivity;
 import com.orcs.boomshakalaka.activity.library.InfoCenterActivity;
 import com.orcs.boomshakalaka.activity.library.SpinnerWidgetActivity;
+import com.orcs.boomshakalaka.activity.library.WheelViewDemoActivity;
 import com.orcs.boomshakalaka.adapter.MainTabAdapter;
 import com.orcs.boomshakalaka.ui.MyGridView;
 
@@ -23,15 +24,9 @@ public class LibraryFragment extends BaseFragment {
 
     //资讯中心
     private MyGridView mInfoCenterMGV;
-    private List<String> infoNames;
-    private List<Integer> infoIcons;
-    private MainTabAdapter mTabAdapter;
 
     //控件
     private MyGridView mWidgetStustyMGV;
-    private List<String> widgetNames;
-    private List<Integer> widgetIcons;
-    private MainTabAdapter widgetStudyAdapter;
 
 
     @Override
@@ -49,24 +44,26 @@ public class LibraryFragment extends BaseFragment {
     @Override
     protected void initialization() {
 
-        infoNames = new ArrayList<>();
+        List<String> infoNames = new ArrayList<>();
         infoNames.add("企业资讯");
         infoNames.add("IT资讯");
-        infoIcons = new ArrayList<>();
+        List<Integer> infoIcons = new ArrayList<>();
         infoIcons.add(R.drawable.company_news);
         infoIcons.add(R.drawable.industry_news);
-        mTabAdapter = new MainTabAdapter(mContext, infoNames, infoIcons);
-        mInfoCenterMGV.setAdapter(mTabAdapter);
+        MainTabAdapter tabAdapter = new MainTabAdapter(mContext, infoNames, infoIcons);
+        mInfoCenterMGV.setAdapter(tabAdapter);
 
-        widgetNames = new ArrayList<>();
+        List<String> widgetNames = new ArrayList<>();
         widgetNames.add("对话框");
         widgetNames.add("ListView");
         widgetNames.add("spinner");
-        widgetIcons = new ArrayList<>();
+        widgetNames.add("WheelView");
+        List<Integer> widgetIcons = new ArrayList<>();
         widgetIcons.add(R.drawable.contend);
         widgetIcons.add(R.drawable.contend);
         widgetIcons.add(R.drawable.contend);
-        widgetStudyAdapter = new MainTabAdapter(mContext, widgetNames, widgetIcons);
+        widgetIcons.add(R.drawable.contend);
+        MainTabAdapter widgetStudyAdapter = new MainTabAdapter(mContext, widgetNames, widgetIcons);
         mWidgetStustyMGV.setAdapter(widgetStudyAdapter);
     }
 
@@ -101,6 +98,9 @@ public class LibraryFragment extends BaseFragment {
 
                     case 2:
                         startActivity(new Intent(mContext, SpinnerWidgetActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(mContext, WheelViewDemoActivity.class));
                         break;
                     default:
                         break;

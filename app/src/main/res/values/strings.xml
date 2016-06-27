@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OO</string>
+    <string name="app_name">O*O</string>
 
     <!--MainActivity-->
     <string name="community">圈子</string>
@@ -33,4 +33,8 @@
     <string name="toast_positive">你点击了确定按钮</string>
     <string name="toast_negative">你点击了取消按钮</string>
     <string name="text">自定义Adapter的内容</string>
+
+    <!-- WheelViewDemoActivity-->
+    <string name="activityWheelViewShow">show WheelView in Dialog!</string>
+
 </resources>

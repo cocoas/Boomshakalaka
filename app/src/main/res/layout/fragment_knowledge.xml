@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base16dp"
+            android:layout_marginRight="@dimen/base16dp"
+            android:layout_marginTop="@dimen/base28dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/base8dp"
+            >
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base16dp"
+                android:drawableLeft="@drawable/title_flag"
+                android:drawablePadding="@dimen/base4dp"
+                android:text="@string/information_center"
+                />
+
+            <include layout="@layout/view_content_divider"/>
+
+            <com.orcs.boomshakalaka.ui.MyGridView
+                android:id="@+id/information_center_MGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base8dp"
+                android:numColumns="4"
+                />
+            <!-- 控件学习 -->
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base16dp"
+                android:drawableLeft="@drawable/title_flag"
+                android:drawablePadding="@dimen/base4dp"
+                android:text="@string/information_widget_study"
+                />
+
+            <include layout="@layout/view_content_divider"/>
+
+            <com.orcs.boomshakalaka.ui.MyGridView
+                android:id="@+id/information_widgetStudy_MGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base8dp"
+                android:numColumns="4"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

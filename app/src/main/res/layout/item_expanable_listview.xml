@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                style="@style/NormalCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="2dp"
+                card_view:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/base10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/base8dp"
+                            android:paddingTop="@dimen/base8dp">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="活动类型:"/>
+
+                            <TextView
+                                android:id="@+id/actual_type"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/base8dp"
+                            android:paddingTop="@dimen/base8dp">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="活动时间:"/>
+
+                            <TextView
+                                android:id="@+id/actual_time"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/base8dp"
+                            android:paddingTop="@dimen/base8dp">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="我方参与人:"/>
+
+                            <TextView
+                                android:id="@+id/actual_people"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expandable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/base8dp"
+                            android:paddingTop="@dimen/base8dp">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="客户参与人:"/>
+
+                            <TextView
+                                android:id="@+id/actual_client_people"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/base8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="活动目的:"/>
+
+                            <TextView
+                                android:id="@+id/actual_client_goal"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/base8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="活动内容:"/>
+
+                            <TextView
+                                android:id="@+id/actual_client_content"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="未完成:"/>
+
+                            <TextView
+                                android:id="@+id/actual_client_not_content"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/base8dp"
+                            android:paddingTop="@dimen/base8dp">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="活动周期:"/>
+
+                            <TextView
+                                android:id="@+id/actual_period"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/base8dp"
+                            android:paddingTop="@dimen/base8dp">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="周期单位:"/>
+
+                            <TextView
+                                android:id="@+id/actual_unit"
+                                style="@style/NormalContent1Style"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/base8dp"
+                            android:paddingTop="@dimen/base8dp">
+
+                            <TextView
+                                style="@style/NormalMessageNameStyle"
+                                android:text="备注:"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/actial_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/base5dp"
+                            android:padding="@dimen/base10dp"
+                            android:text="Nice"
+                            android:textColor="#272727"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/expandable_toggle_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/base10dp"
+                            android:src="@drawable/pqi_false"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

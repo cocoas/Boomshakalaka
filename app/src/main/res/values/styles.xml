@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- cardView条目的样式抽取 -->
+    <style name="NormalCardViewStyle">
+        <item name="android:layout_margin">@dimen/base8dp</item>
+        <item name="android:stateListAnimator" tools:targetApi="lollipop">@anim/touch_raise</item>
+        <item name="android:paddingLeft">@dimen/base8dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!-- ListView的样式 -->
+    <style name="NormalListViewStyle">
+        <item name="android:padding">@dimen/base8dp</item>
+        <item name="android:divider">#F2F2F2</item>
+        <item name="android:dividerHeight">@dimen/base8dp</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!-- 显示详情的TextView标题的样式 -->
+    <style name="NormalMessageNameStyle">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/message_name</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">@dimen/base78dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 显示详情的TextView内容的样式 -->
+    <style name="NormalContent1Style">
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:textColor">@color/message_content</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="android:width">0dp</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_marginLeft">@dimen/base4dp</item>
+    </style>
+
+    <!--Bottom Dialog animation-->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <!--Bottom Dialog style-->
+    <style name="BottomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--Top Dialog animation-->
+    <style name="AnimTop" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_top_in</item>
+        <item name="android:windowExitAnimation">@anim/push_top_out</item>
+    </style>
+    <!--Top Dialog style-->
+    <style name="TopDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimTop</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--Center Dialog style-->
+    <style name="CenterDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

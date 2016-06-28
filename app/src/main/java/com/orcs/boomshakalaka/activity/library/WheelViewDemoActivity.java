@@ -54,6 +54,8 @@ public class WheelViewDemoActivity extends BaseActivity implements View.OnClickL
                         .setTitle("WheelView in Dialog")
                         .setView(outerView)
                         .setPositiveButton("确定",null)
+                        .setNegativeButton("取消",null)
+                        .setCancelable(false)
                         .show();
                 break;
             default:

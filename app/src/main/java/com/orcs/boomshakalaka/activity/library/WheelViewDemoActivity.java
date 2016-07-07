@@ -16,7 +16,8 @@ import java.util.Arrays;
  * Created by Administrator on 2016/6/27.
  * WheelView DEMO
  */
-public class WheelViewDemoActivity extends BaseActivity implements View.OnClickListener {
+public class WheelViewDemoActivity extends BaseActivity
+        implements View.OnClickListener {
 
     private static final String TAG = WheelViewDemoActivity.class.getSimpleName();
 
@@ -37,7 +38,7 @@ public class WheelViewDemoActivity extends BaseActivity implements View.OnClickL
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.wheelview_show_dialog_btn:
-                View outerView = LayoutInflater.from(this).inflate(R.layout.view_wheel,null);
+                View outerView = LayoutInflater.from(this).inflate(R.layout.view_wheel, null);
                 WheelView wv = (WheelView) outerView.findViewById(R.id.wheel_view_wv);
                 wv.setOffset(1);
                 wv.setItems(Arrays.asList(PLANETS));
@@ -53,8 +54,8 @@ public class WheelViewDemoActivity extends BaseActivity implements View.OnClickL
                 new AlertDialog.Builder(this)
                         .setTitle("WheelView in Dialog")
                         .setView(outerView)
-                        .setPositiveButton("确定",null)
-                        .setNegativeButton("取消",null)
+                        .setPositiveButton("确定", null)
+                        .setNegativeButton("取消", null)
                         .setCancelable(false)
                         .show();
                 break;

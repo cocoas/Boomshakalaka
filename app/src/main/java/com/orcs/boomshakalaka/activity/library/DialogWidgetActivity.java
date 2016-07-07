@@ -101,7 +101,7 @@ public class DialogWidgetActivity extends BaseActivity implements View.OnClickLi
      * 基本对话框创建
      */
     private void showSimpleDialog() {
-        builder = new AlertDialog.Builder(this);
+        builder = new AlertDialog.Builder(this,R.style.MyAlertDialogStyle);
         builder.setIcon(R.mipmap.ic_launcher);
         builder.setTitle(R.string.simple_dialog);
         builder.setMessage(R.string.dialog_message);
